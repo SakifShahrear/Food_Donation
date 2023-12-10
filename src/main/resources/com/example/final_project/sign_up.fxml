@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #2CBD1B;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.User_login">
+    <children>
+        <AnchorPane layoutX="315.0" layoutY="47.0" prefHeight="620.0" prefWidth="419.0" style="-fx-background-color: white;">
+            <children>
+                <PasswordField fx:id="Upass" layoutX="65.0" layoutY="355.0" prefHeight="26.0" prefWidth="314.0" promptText="Password">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </PasswordField>
+                <Button layoutX="63.0" layoutY="468.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: #2CBD1B;" text="SIGN UP" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="92.0" layoutY="539.0" prefHeight="26.0" prefWidth="242.0" text="Already have an account?   SIGN IN" />
+                <Button layoutX="253.0" layoutY="526.0" mnemonicParsing="false" onAction="#user_login" opacity="0.0" prefHeight="46.0" prefWidth="63.0" />
+                <ImageView fitHeight="84.0" fitWidth="88.0" layoutX="92.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Picture/20231024_235559_0000.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="175.0" layoutY="53.0" prefHeight="66.0" prefWidth="147.0" text="USER SIGN UP">
+                    <font>
+                        <Font name="Gill Sans MT Condensed" size="30.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="53.0" fitWidth="46.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                    <Image url="@Picture/20231024_235559_0001.png" />
+                </ImageView>
+                <Button layoutX="6.0" layoutY="12.0" mnemonicParsing="false" onAction="#user_login" opacity="0.0" prefHeight="46.0" prefWidth="63.0" />
+            <TextField fx:id="Unumber" layoutX="64.0" layoutY="264.0" prefHeight="26.0" prefWidth="314.0" promptText="Contact Number" style="-fx-region-border: #428f1b;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Uemail" layoutX="62.0" layoutY="220.0" opacity="0.96" prefHeight="26.0" prefWidth="314.0" promptText="Email" style="-fx-region-border: #428f1b;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Ulocation" layoutX="64.0" layoutY="309.0" prefHeight="26.0" prefWidth="314.0" promptText="Location" style="-fx-region-border: #428f1b;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="UconfirmPass" layoutX="65.0" layoutY="398.0" prefHeight="26.0" prefWidth="314.0" promptText="Confirm Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="ul_loginlavel" alignment="CENTER" layoutX="68.0" layoutY="432.0" prefHeight="26.0" prefWidth="314.0" textFill="RED">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user_name" layoutX="62.0" layoutY="176.0" opacity="0.96" prefHeight="26.0" prefWidth="314.0" promptText="Username " style="-fx-region-border: #428f1b;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

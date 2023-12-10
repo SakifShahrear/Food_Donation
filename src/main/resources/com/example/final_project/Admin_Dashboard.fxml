@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #c93659;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.admin">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="702.0" prefWidth="1061.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutX="232.0" layoutY="23.0" prefHeight="51.0" prefWidth="217.0" text="Donation Request" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="Adonation_view" layoutX="186.0" layoutY="77.0" prefHeight="603.0" prefWidth="299.0" />
+            <Label alignment="CENTER" layoutX="777.0" layoutY="20.0" prefHeight="51.0" prefWidth="217.0" text="Rider Available" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="rAdonation_view" layoutX="750.0" layoutY="82.0" prefHeight="603.0" prefWidth="299.0" />
+            <FontAwesomeIconView glyphName="USER" layoutX="65.0" layoutY="111.0" size="50" />
+            <Label layoutX="23.0" layoutY="125.0" prefHeight="38.0" prefWidth="131.0" text="WELCOME" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="16.0" layoutY="166.0" prefHeight="38.0" prefWidth="131.0" text="ADMIN" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="5.8000030517578125" endY="456.20001220703125" layoutX="169.0" layoutY="205.0" startX="5.8000030517578125" startY="-145.39999389648438" />
+            <Button layoutX="12.0" layoutY="11.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="38.0" prefWidth="36.0" />
+            <FontAwesomeIconView fill="#c93659" glyphName="ARROW_CIRCLE_LEFT" layoutX="17.0" layoutY="41.0" size="30" />
+            <Button layoutX="13.0" layoutY="649.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Log Out" />
+            <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="50.0" prefWidth="52.0" />
+            <Label alignment="CENTER" layoutX="497.0" layoutY="24.0" prefHeight="51.0" prefWidth="217.0" text="Assign To Rider" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="496.0" layoutY="82.0" prefHeight="590.0" prefWidth="239.0" style="-fx-background-color: #c93659;">
+               <children>
+                  <AnchorPane layoutX="9.0" layoutY="8.0" prefHeight="571.0" prefWidth="218.0" style="-fx-background-color: white;">
+                     <children>
+                        <TextField fx:id="Donar_name" layoutX="22.0" layoutY="132.0" prefHeight="40.0" prefWidth="182.0" promptText="Donar ID" style="-fx-background-color: #c93659;">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="Rider_ID" layoutX="24.0" layoutY="190.0" prefHeight="40.0" prefWidth="182.0" promptText="Rider ID" style="-fx-background-color: #c93659;">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="61.0" layoutY="276.0" mnemonicParsing="false" onAction="#click" prefHeight="40.0" prefWidth="112.0" text="Click">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="ad_label" alignment="CENTER" layoutX="33.0" layoutY="86.0" prefHeight="30.0" prefWidth="164.0" textFill="RED">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

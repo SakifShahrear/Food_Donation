@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #c93659;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.new_request">
+   <children>
+      <AnchorPane fx:id="scenePane" layoutX="9.0" layoutY="14.0" prefHeight="702.0" prefWidth="1061.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutX="183.0" layoutY="26.0" prefHeight="51.0" prefWidth="217.0" text="New Request" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="771.0" layoutY="32.0" prefHeight="51.0" prefWidth="273.0" text="Successfully Donated" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="USER" layoutX="50.0" layoutY="111.0" size="50" />
+            <Label layoutX="9.0" layoutY="125.0" prefHeight="38.0" prefWidth="131.0" text="WELCOME" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="4.0" layoutY="166.0" prefHeight="38.0" prefWidth="131.0" text="RIDER" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="5.8000030517578125" endY="484.86669921875" layoutX="131.0" layoutY="203.0" startX="5.8000030517578125" startY="-165.8000030517578" />
+            <Button layoutX="12.0" layoutY="11.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="38.0" prefWidth="36.0" />
+            <Button fx:id="logoutButton" layoutX="13.0" layoutY="649.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #c93659;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label alignment="CENTER" layoutX="472.0" layoutY="31.0" prefHeight="51.0" prefWidth="273.0" text="Pending" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="223.0" layoutY="527.0" mnemonicParsing="false" onAction="#approve" prefHeight="18.0" prefWidth="144.0" style="-fx-background-color: #c93659;" text="Approve" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="540.0" layoutY="522.0" mnemonicParsing="false" onAction="#approve_done" prefHeight="14.0" prefWidth="131.0" style="-fx-background-color: #c93659;" text="Done" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Label fx:id="helllo" layoutX="529.0" layoutY="177.0" prefHeight="30.0" prefWidth="144.0" />
+            <ListView fx:id="r_new_Adonation_view" layoutX="155.0" layoutY="118.0" prefHeight="336.0" prefWidth="287.0" />
+            <ListView fx:id="r_suc_Adonation_view" layoutX="753.0" layoutY="117.0" prefHeight="572.0" prefWidth="302.0" />
+            <Label fx:id="r_new_label" alignment="CENTER" layoutX="159.0" layoutY="472.0" prefHeight="43.0" prefWidth="586.0" textFill="#0030ff">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="277.0" prefHeight="38.0" prefWidth="131.0" text="Your " textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="314.0" prefHeight="38.0" prefWidth="131.0" text="Rider ID" textFill="#c93659">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="9.60003662109375" layoutX="110.0" layoutY="240.0" startX="-100.0" stroke="#c93659" />
+            <Line endX="9.60003662109375" layoutX="111.0" layoutY="364.0" startX="-100.0" stroke="#c93659" />
+            <ListView fx:id="r_pen_Adonation_view" layoutX="455.0" layoutY="117.0" prefHeight="336.0" prefWidth="287.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

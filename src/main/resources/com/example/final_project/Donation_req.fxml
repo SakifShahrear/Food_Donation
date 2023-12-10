@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #c93659;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.don_new_request">
+   <children>
+      <AnchorPane layoutX="290.0" layoutY="20.0" prefHeight="680.0" prefWidth="492.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="159.0" layoutY="67.0" prefHeight="39.0" prefWidth="204.0" text="New Request">
+               <font>
+                  <Font name="Gill Sans MT Ext Condensed Bold" size="51.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dfoodname" layoutX="98.0" layoutY="238.0" prefHeight="46.0" prefWidth="293.0" promptText="Food Name" style="-fx-background-color: #c93659;">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dquantity" layoutX="97.0" layoutY="302.0" prefHeight="46.0" prefWidth="293.0" promptText="Quantity" style="-fx-background-color: #c93659;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="daddress" layoutX="98.0" layoutY="364.0" prefHeight="46.0" prefWidth="293.0" promptText="Address" style="-fx-background-color: #c93659;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="dpickerdate" layoutX="97.0" layoutY="486.0" prefHeight="46.0" prefWidth="293.0" promptText="Picker Date" style="-fx-background-color: #c93659;" />
+            <Button layoutX="164.0" layoutY="565.0" mnemonicParsing="false" onAction="#donation_req" prefHeight="46.0" prefWidth="154.0" style="-fx-background-color: #c93659;" text="Click">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <FontAwesomeIconView fill="#c93659" glyphName="CHEVRON_CIRCLE_LEFT" layoutX="22.0" layoutY="63.0" size="50" wrappingWidth="42.33335018157959" />
+            <Button layoutX="12.0" layoutY="15.0" mnemonicParsing="false" onAction="#donation" opacity="0.0" prefHeight="64.0" prefWidth="63.0" />
+            <TextField fx:id="dcontact" layoutX="99.0" layoutY="425.0" prefHeight="48.0" prefWidth="294.0" promptText="Contact" style="-fx-background-color: #c93659;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dname" layoutX="97.0" layoutY="174.0" prefHeight="46.0" prefWidth="293.0" promptText="Your Name" style="-fx-background-color: #c93659;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

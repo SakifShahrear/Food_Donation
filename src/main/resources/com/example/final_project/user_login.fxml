@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #2CBD1B;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.User_login">
+   <children>
+      <AnchorPane layoutX="317.0  " layoutY="48.0" prefHeight="620.0" prefWidth="419.0" style="-fx-background-color: white;">
+         <children>
+            <PasswordField fx:id="ulpass" layoutX="44.0" layoutY="265.0" prefHeight="46.0" prefWidth="334.0" promptText="Password">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="ultext" layoutX="43.0" layoutY="196.0" prefHeight="46.0" prefWidth="334.0" promptText="Username" style="-fx-region-border: #428f1b;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Button layoutX="55.0" layoutY="385.0" mnemonicParsing="false" onAction="#logge" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: #2CBD1B;" text="SIGN IN" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="92.0" layoutY="461.0" prefHeight="26.0" prefWidth="242.0" text="Don't have a account?   SIGN UP" />
+            <Label alignment="CENTER" layoutX="182.0" layoutY="326.0" prefHeight="26.0" prefWidth="242.0" text="Forgot Password?" textFill="#ef0505" />
+            <Button layoutX="235.0" layoutY="326.0" mnemonicParsing="false" onAction="#forgot" opacity="0.0" prefHeight="26.0" prefWidth="136.0" />
+            <Button layoutX="249.0" layoutY="452.0" mnemonicParsing="false" onAction="#user_signup" opacity="0.0" prefHeight="46.0" prefWidth="63.0" />
+            <ImageView fitHeight="84.0" fitWidth="88.0" layoutX="92.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Picture/20231024_235559_0000.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="161.0" layoutY="53.0" prefHeight="66.0" prefWidth="147.0" text="USER LOGIN">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="46.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@Picture/20231024_235559_0001.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="6.0" layoutY="12.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="46.0" prefWidth="63.0" />
+            <Label fx:id="ul_loginlavel" alignment="CENTER" layoutX="52.0" layoutY="140.0" prefHeight="35.0" prefWidth="322.0" textFill="#ff0606">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
